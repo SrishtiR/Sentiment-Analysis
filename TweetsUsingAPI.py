@@ -32,4 +32,4 @@ class listener(StreamListener):
 auth = OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
 twitterStream = Stream(auth, listener())
-twitterStream.filter(track=["Narendra Modi"])
+twitterStream.filter(track=["text"]) #replace text with entity related to which tweets are to be extracted. In my case, I used "Narendra Modi"
